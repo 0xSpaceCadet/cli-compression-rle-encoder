@@ -5,6 +5,9 @@
 int m_function(int s_parameter); // prototype
 void fibn(int n);
 int isPrime(unsigned long long n); // ptype
+int isPalindrome(const char *string);
+
+
 
 int main(){
     printf("\nthis is for control structure, data type and operator\n");
@@ -35,6 +38,30 @@ int main(){
     printf("\n%p", m_int_ptr);
     printf("\n%p", &m_int_ptr);
 
+    int m_arr[5] = {1,2,3,4,5};
+    printf("\n%d", *m_arr);
+    printf("\n%d", *(m_arr+1));
+
+    char *m_string="clrf terminal";
+    printf("\n%s", m_string);
+    printf("\n%p", &m_string);
+
+    char *right = m_string;
+    right++; right++;
+    printf("\nright string as -- %s", right);
+    printf("\nright string but refereced as pointer -- %p", right);
+    char *lefty = "tattarrattat";
+
+    //printf("\nis palindrome %s", isPalindrome(lefty) ? true : false);
+    printf("\n");
+    for (int i=0; i<8; i++) {
+        for (int i2=0; i2<8; i2++) {
+            char c = (i<3)
+                    ? (i2%2==0 ? 'X' : 'R')
+                    : (i>4 ? (i2%2==0 ? 'B' : 'X') : ' ');
+            printf("%c", c);
+        } printf("\n");
+    }
     return 0;
 }
 
@@ -70,3 +97,17 @@ int isPrime(unsigned long long n) {
     }
     return cntr;
 } // def
+
+
+int isPalindrome(const char *string){
+    const char *left=string;
+    const char *right=string;
+
+    // to reach at end of arbitrary string
+    while (*right) {right++;} right--;
+    while(left<right){
+        if (*left != *right) return 0;
+        left++; right--;
+    }
+    return 1;
+}

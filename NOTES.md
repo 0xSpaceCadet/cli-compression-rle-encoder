@@ -112,3 +112,11 @@ overload any VAR with & to refer its address
 
 * -> works as dereferencing the pointer
 & -> works as referening the address
+
+for putting scope
+*PTR = &VAR
+
+name of array is an adress
+
+to deine and jumpt ptrs 
+use WHILE
