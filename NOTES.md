@@ -95,3 +95,20 @@ Bitwise -> Logical &&
 Left and Right Shift Operators in C 
 multiplication and Division by powers of 2 without arithmetic
 
+function is a named block that does something 
+
+function signagure prototype
+we can define the later
+
+
+anything defined with local namespace is UNDECLARED for the other stack bit
+
+to manipulate registers we use refrence address not name to avoid 
+COPIES creation
+
+dataType *variableName;
+
+overload any VAR with & to refer its address
+
+* -> works as dereferencing the pointer
+& -> works as referening the address
