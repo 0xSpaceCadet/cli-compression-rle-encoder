@@ -120,3 +120,21 @@ name of array is an adress
 
 to deine and jumpt ptrs 
 use WHILE
+
+scanf("@inp%d", reference to dtype)
+
+order of sortign algorithms
+
+Insertion Sort — teaches local ordering logic.
+
+Selection Sort — teaches finding minimums systematically (introduces scanning and swapping).
+
+Bubble Sort — shows pairwise comparison and repeated passes (useful to learn what not to do).
+
+Merge Sort — teaches divide-and-conquer; recursion and merging.
+
+Quick Sort — teaches partitioning, pivoting, and probabilistic thinking about average case.
+
+Heap Sort — teaches data structure–driven sorting (binary heaps).
+
+Counting / Radix Sort — shows how structure of data (not comparison) can make sorting linear time.

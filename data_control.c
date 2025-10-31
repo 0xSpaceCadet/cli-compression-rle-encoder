@@ -28,8 +28,8 @@ int main(){
         n2=trl;
         cntr+=1;
     }
-    printf("\n");
-    fibn(10);
+
+
     printf("%d",  isPrime(10000001427));
 
     int m_int=5;
@@ -62,6 +62,11 @@ int main(){
             printf("%c", c);
         } printf("\n");
     }
+
+    int scan_num;
+    scanf("@inp=%d",&scan_num); // pass referencef rom input stream ?
+    printf("\nFibonacci numbers --");
+    fibn(scan_num);
     return 0;
 }
 
